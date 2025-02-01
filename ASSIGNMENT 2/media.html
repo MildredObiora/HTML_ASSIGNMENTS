@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - My Media Showcase</title>
+    <style>
+        #mediabody {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+        gap: 10px;
+        justify-items: center; /* Centers images */
+    }
+    
+    .grid-container img {
+        width: 100%;
+        height: auto;
+    }
+        
+        .myvideos, .myaudio {
+            width: 80%;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body id="mediabody">
+    <h1>Welcome to My Story</h1>
+    <p>A glimpse into my journey through multimedia</p>
+    
+    <div class="image_container">
+        <picture>
+            <img src="../ASSIGNMENT 2/Assets/Whatsapp_Image_1.jpg" alt="My Inspirational journey">
+        </picture>
+    </div>
+    
+    <h2>Listen to My Voice</h2>
+    <audio class="myaudio" controls>
+        <source src="./Assets/WhatsApp Audio 2025-02-01 at 10.00.45_c8dd5549.dat.unknown" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <h2>Watch My Journey</h2>
+    <video controls class="myvideos">
+        <source src="./Assets/WhatsApp Video 2025-02-01 at 07.35.03_a1f67d59.mp4" type="video/mp4">
+        Your browser does not support the video element.
+    </video>
+    
+</body>
+</html>
